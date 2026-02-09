@@ -260,6 +260,11 @@ private fun ColumnScope.GeneralSection(
             onClick = onOpenRageShake
         )
     }
+    ListItem(
+        headlineContent = { Text(stringResource(id = CommonStrings.new_report_a_problem)) },
+        leadingContent = ListItemContent.Icon(IconSource.Vector(CompoundIcons.ChatProblem())),
+        onClick = onOpenRageShake,
+    )
     if (state.showAnalyticsSettings) {
         ListItem(
             headlineContent = { Text(stringResource(id = CommonStrings.common_analytics)) },
